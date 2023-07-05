@@ -1,0 +1,416 @@
+{
+    "block0": {
+        "step0": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block0_step0_state0",
+                            "state": "00",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 1,
+                            "children": ["block0_step1_state0", "block0_step1_state1"],
+                            "positive": true
+                        }
+                    },
+                    "probability": 1
+                }
+            },
+            "statevector": [[1,0], [0,0], [0,0], [0,0]]
+        },
+        "step1": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block0_step1_state0",
+                            "state": "00",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 0,
+                            "children": ["block1_step0_state0", "block1_step0_state2"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block0_step1_state1",
+                            "state": "01",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 0,
+                            "children": ["block1_step0_state1", "block1_step0_state3"],
+                            "positive": true
+                        }
+                    },
+                    "probability": 0.5
+                }
+            },
+            "statevector": [[0.707, 0], [0.707,0],[0,0],[0,0]]
+        }
+    },
+    "block1": {
+        "step0": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block1_step0_state0",
+                            "state": "00",
+                            "post_gate": "cz",
+                            "post_gate_name": "Control Z",
+                            "act_on": 1,
+                            "children": ["block2_step0_state0"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block1_step0_state1",
+                            "state": "01",
+                            "post_gate": "cz",
+                            "post_gate_name": "Control Z",
+                            "act_on": 1,
+                            "children": ["block2_step0_state1"],
+                            "positive": true
+                        },
+                        "state2": {
+                            "token": "block1_step0_state2",
+                            "state": "10",
+                            "post_gate": "cz",
+                            "post_gate_name": "Control Z",
+                            "act_on": 1,
+                            "children": ["block2_step0_state2"],
+                            "positive": true
+                        },
+                        "state3": {
+                            "token": "block1_step0_state3",
+                            "state": "11",
+                            "post_gate": "cz",
+                            "post_gate_name": "Control Z",
+                            "act_on": 1,
+                            "children": ["block2_step0_state3"],
+                            "positive": true
+                        }
+                    },
+                    "probability": 0.25
+                }
+            },
+            "statevector": [[0.5,0],[0.5,0],[0.5,0],[0.5,0]]
+        }
+    },
+    "block2": {
+        "step0": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block2_step0_state0",
+                            "state": "00",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 1,
+                            "children": ["block2_step1_state0"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block2_step0_state1",
+                            "state": "01",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 1,
+                            "children": ["block2_step1_state0"],
+                            "positive": true
+                        },
+                        "state2": {
+                            "token": "block2_step0_state2",
+                            "state": "10",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 1,
+                            "children": ["block2_step1_state1"],
+                            "positive": true
+                        },
+                        "state3": {
+                            "token": "block2_step0_state3",
+                            "state": "11",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 1,
+                            "children": ["block2_step1_state1"],
+                            "positive": false
+                        }
+                    },
+                    "probability": 0.25
+                }
+            },
+            "statevector": [[0.5,0],[0.5,0],[0.5,0],[-0.5,0]]
+        },
+        "step1": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block2_step1_state0",
+                            "state": "00",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 0,
+                            "children": ["block3_step0_state0", "block3_step0_state2"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block2_step1_state1",
+                            "state": "11",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 0,
+                            "children": ["block3_step0_state1", "block3_step0_state3"],
+                            "positive": true
+                        }
+                    },
+                    "probability": 0.5
+                }
+            },
+            "statevector": [[0.707,0],[0,0],[0,0],[0.707,0]]
+        }
+    },
+    "block3": {
+        "step0": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block3_step0_state0",
+                            "state": "00",
+                            "post_gate": "z",
+                            "post_gate_name": "Z",
+                            "act_on": 0,
+                            "children": ["block3_step1_state0"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block3_step0_state1",
+                            "state": "01",
+                            "post_gate": "z",
+                            "post_gate_name": "Z",
+                            "act_on": 0,
+                            "children": ["block3_step1_state1"],
+                            "positive": true
+                        },
+                        "state2": {
+                            "token": "block3_step0_state2",
+                            "state": "10",
+                            "post_gate": "z",
+                            "post_gate_name": "Z",
+                            "act_on": 0,
+                            "children": ["block3_step1_state2"],
+                            "positive": true
+                        },
+                        "state3": {
+                            "token": "block3_step0_state3",
+                            "state": "11",
+                            "post_gate": "z",
+                            "post_gate_name": "Z",
+                            "act_on": 0,
+                            "children": ["block3_step1_state3"],
+                            "positive": false
+                        }
+                    },
+                    "probability": 0.25
+                }
+            },
+            "statevector": [[0.5,0],[0.5,0],[0.5,0],[-0.5,0]]
+        },
+        "step1": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block3_step1_state0",
+                            "state": "00",
+                            "post_gate": "z",
+                            "post_gate_name": "Z",
+                            "act_on": 1,
+                            "children": ["block4_step0_state0"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block3_step1_state1",
+                            "state": "01",
+                            "post_gate": "z",
+                            "post_gate_name": "Z",
+                            "act_on": 1,
+                            "children": ["block4_step0_state1"],
+                            "positive": false
+                        },
+                        "state2": {
+                            "token": "block3_step1_state2",
+                            "state": "10",
+                            "post_gate": "z",
+                            "post_gate_name": "Z",
+                            "act_on": 1,
+                            "children": ["block4_step0_state2"],
+                            "positive": true
+                        },
+                        "state3": {
+                            "token": "block3_step1_state3",
+                            "state": "11",
+                            "post_gate": "z",
+                            "post_gate_name": "Z",
+                            "act_on": 1,
+                            "children": ["block4_step0_state3"],
+                            "positive": true
+                        }
+                    },
+                    "probability": 0.25
+                }
+            },
+            "statevector": [[0.5,0], [-0.5,0],[0.5,0], [0.5,0]]
+        }
+    },
+    "block4": {
+        "step0": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block4_step0_state0",
+                            "state": "00",
+                            "post_gate": "cz",
+                            "post_gate_name": "Control Z",
+                            "act_on": 0,
+                            "children": ["block5_step0_state0"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block4_step0_state1",
+                            "state": "01",
+                            "post_gate": "cz",
+                            "post_gate_name": "Control Z",
+                            "act_on": 0,
+                            "children": ["block5_step0_state1"],
+                            "positive": false
+                        },
+                        "state2": {
+                            "token": "block4_step0_state2",
+                            "state": "10",
+                            "post_gate": "cz",
+                            "post_gate_name": "Control Z",
+                            "act_on": 0,
+                            "children": ["block5_step0_state2"],
+                            "positive": false
+                        },
+                        "state3": {
+                            "token": "block4_step0_state3",
+                            "state": "11",
+                            "post_gate": "cz",
+                            "post_gate_name": "Control Z",
+                            "act_on": 0,
+                            "children": ["block5_step0_state3"],
+                            "positive": false
+                        }
+                    },
+                    "probability": 0.25
+                }
+            },
+            "statevector": [[0.5,0], [-0.5,0],[-0.5,0], [-0.5,0]]
+        }
+    },
+    "block5": {
+        "step0": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block5_step0_state0",
+                            "state": "00",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 1,
+                            "children": ["block5_step1_state0"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block5_step0_state1",
+                            "state": "01",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 1,
+                            "children": ["block5_step1_state0"],
+                            "positive": false
+                        },
+                        "state2": {
+                            "token": "block5_step0_state2",
+                            "state": "10",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 1,
+                            "children": ["block5_step1_state1"],
+                            "positive": false
+                        },
+                        "state3": {
+                            "token": "block5_step0_state3",
+                            "state": "11",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 1,
+                            "children": ["block5_step1_state1"],
+                            "positive": true
+                        }
+                    },
+                    "probability": 0.25
+                }
+            },
+            "statevector": [[0.5,0], [-0.5,0],[-0.5,0], [0.5,0]]
+        },
+        "step1": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block5_step1_state0",
+                            "state": "01",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 0,
+                            "children": ["block6_step0_state0"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block5_step1_state1",
+                            "state": "11",
+                            "post_gate": "h",
+                            "post_gate_name": "Hadamard",
+                            "act_on": 0,
+                            "children": ["block6_step0_state0"],
+                            "positive": false
+                        }
+                    },
+                    "probability": 0.5
+                }
+            },
+            "statevector": [[0,0], [0.707,0], [0,0], [-0.707,0]]
+        }
+    },
+    "block6": {
+        "step0": {
+            "hubs": {
+                "statehub0": {
+                    "states":{
+                        "state0": {
+                            "token": "block6_step0_state0",
+                            "state": "11",
+                            "post_gate": "",
+                            "post_gate_name": "",
+                            "act_on": "",
+                            "children": "",
+                            "positive": true
+                        }
+                    },
+                    "probability": 1
+                }
+            },
+            "statevector": [[0,0], [0,0], [0,0], [1,0]]
+        }
+    }
+}
+
+

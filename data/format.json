@@ -1,0 +1,20 @@
+{
+    "block0": {
+        "step0": {
+            "statehub0": {
+                "states":{
+                    "state0": {
+                        "token": "block0_step0_state0",
+                        "state": "00",
+                        "post_gate": "h",
+                        "name": "Hadamard",
+                        "act_on": 1,
+                        "children": ["block0_step1_state0", "block0_step1_state1"]
+                    }
+                },
+                "probability": 1
+            },
+            "statevector": [1, 0, 0, 0]
+        }
+    }
+}
