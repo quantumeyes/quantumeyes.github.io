@@ -211,7 +211,7 @@
                             "token": "block4_step0_state0",
                             "state": "00",
                             "post_gate": "h",
-                            "act_on": 1,
+                            "act_on": 0,
                             "control": "",
                             "children": ["block4_step1_state0", "block4_step1_state1"],
                             "positive": true
@@ -220,7 +220,7 @@
                             "token": "block4_step0_state1",
                             "state": "11",
                             "post_gate": "h",
-                            "act_on": 1,
+                            "act_on": 0,
                             "control": "",
                             "children": ["block4_step1_state2", "block4_step1_state3"],
                             "positive": true
@@ -239,7 +239,7 @@
                             "token": "block4_step1_state0",
                             "state": "00",
                             "post_gate": "x",
-                            "act_on": 0,
+                            "act_on": 1,
                             "control": "",
                             "children": ["block5_step0_state2"],
                             "positive": true
@@ -248,7 +248,7 @@
                             "token": "block4_step1_state1",
                             "state": "01",
                             "post_gate": "x",
-                            "act_on": 0,
+                            "act_on": 1,
                             "control": "",
                             "children": ["block5_step0_state3"],
                             "positive": true
@@ -257,7 +257,7 @@
                             "token": "block4_step1_state2",
                             "state": "10",
                             "post_gate": "x",
-                            "act_on": 0,
+                            "act_on": 1,
                             "control": "",
                             "children": ["block5_step0_state0"],
                             "positive": true
@@ -266,7 +266,7 @@
                             "token": "block4_step1_state3",
                             "state": "11",
                             "post_gate": "x",
-                            "act_on": 0,
+                            "act_on": 1,
                             "control": "",
                             "children": ["block5_step0_state1"],
                             "positive": true
