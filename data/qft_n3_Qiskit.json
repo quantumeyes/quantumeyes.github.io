@@ -162,7 +162,7 @@
                             "token": "block5_step0_state0",
                             "state": "001",
                             "post_gate": "cp",
-                            "act_on": 0,
+                            "act_on": 2,
                             "control": 1,
                             "children": ["block6_step0_state0"],
                             "positive": true
@@ -171,7 +171,7 @@
                             "token": "block5_step0_state1",
                             "state": "011",
                             "post_gate": "cp",
-                            "act_on": 0,
+                            "act_on": 2,
                             "control": 1,
                             "children": ["block6_step0_state1"],
                             "positive": true
@@ -180,7 +180,7 @@
                             "token": "block5_step0_state2",
                             "state": "101",
                             "post_gate": "cp",
-                            "act_on": 0,
+                            "act_on": 2,
                             "control": 1,
                             "children": ["block6_step0_state2"],
                             "positive": true
@@ -189,7 +189,7 @@
                             "token": "block5_step0_state3",
                             "state": "111",
                             "post_gate": "cp",
-                            "act_on": 0,
+                            "act_on": 2,
                             "control": 1,
                             "children": [ "block6_step0_state3"],
                             "positive": true
