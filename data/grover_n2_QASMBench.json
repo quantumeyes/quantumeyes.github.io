@@ -14,6 +14,7 @@
                             "positive": true
                         }
                     },
+
                     "probability": 1
                 }
             },
@@ -210,19 +211,19 @@
                         "state0": {
                             "token": "block4_step0_state0",
                             "state": "00",
-                            "post_gate": "h",
-                            "act_on": 0,
+                            "post_gate": "x",
+                            "act_on": 1,
                             "control": "",
-                            "children": ["block4_step1_state0", "block4_step1_state1"],
+                            "children": ["block4_step1_state0"],
                             "positive": true
                         },
                         "state1": {
                             "token": "block4_step0_state1",
                             "state": "11",
-                            "post_gate": "h",
-                            "act_on": 0,
+                            "post_gate": "x",
+                            "act_on": 1,
                             "control": "",
-                            "children": ["block4_step1_state2", "block4_step1_state3"],
+                            "children": ["block4_step1_state1"],
                             "positive": true
                         }
                     },
@@ -237,45 +238,27 @@
                     "states":{
                         "state0": {
                             "token": "block4_step1_state0",
-                            "state": "00",
-                            "post_gate": "x",
-                            "act_on": 1,
+                            "state": "01",
+                            "post_gate": "h",
+                            "act_on": 0,
                             "control": "",
-                            "children": ["block5_step0_state2"],
+                            "children": ["block5_step0_state1", "block5_step0_state3"],
                             "positive": true
                         },
                         "state1": {
                             "token": "block4_step1_state1",
-                            "state": "01",
-                            "post_gate": "x",
-                            "act_on": 1,
-                            "control": "",
-                            "children": ["block5_step0_state3"],
-                            "positive": true
-                        },
-                        "state2": {
-                            "token": "block4_step1_state2",
                             "state": "10",
-                            "post_gate": "x",
-                            "act_on": 1,
+                            "post_gate": "h",
+                            "act_on": 0,
                             "control": "",
-                            "children": ["block5_step0_state0"],
-                            "positive": true
-                        },
-                        "state3": {
-                            "token": "block4_step1_state3",
-                            "state": "11",
-                            "post_gate": "x",
-                            "act_on": 1,
-                            "control": "",
-                            "children": ["block5_step0_state1"],
+                            "children": ["block5_step0_state0", "block5_step0_state2"],
                             "positive": true
                         }
                     },
-                    "probability": 0.25
+                    "probability": 0.5
                 }
             },
-            "statevector": [[0.5,0], [0.5,0], [0.5,0], [-0.5,0]]
+            "statevector": [[0,0], [0.707,0], [0.707,0], [0,0]]
         }
     },
     "block5": {
@@ -289,7 +272,7 @@
                             "post_gate": "x",
                             "act_on": 0,
                             "control": "",
-                            "children": ["block6_step0_state1"],
+                            "children": ["block6_step0_state2"],
                             "positive": true
                         },
                         "state1": {
@@ -316,7 +299,7 @@
                             "post_gate": "x",
                             "act_on": 0,
                             "control": "",
-                            "children": ["block6_step0_state2"],
+                            "children": ["block6_step0_state1"],
                             "positive": true
                         }
                     },
@@ -410,22 +393,22 @@
                 "statehub0": {
                     "states":{
                         "state0": {
+                            "token": "block8_step0_state1",
+                            "state": "10",
+                            "post_gate": "x",
+                            "act_on": 1,
+                            "control": "",
+                            "children": ["block8_step1_state1"],
+                            "positive": false
+                        },
+                        "state1": {
                             "token": "block8_step0_state0",
                             "state": "11",
-                            "post_gate": "h",
+                            "post_gate": "x",
                             "act_on": 1,
                             "control": "",
                             "children": ["block8_step1_state0"],
                             "positive": true
-                        },
-                        "state1": {
-                            "token": "block8_step0_state1",
-                            "state": "10",
-                            "post_gate": "h",
-                            "act_on": 1,
-                            "control": "",
-                            "children": ["block8_step1_state0"],
-                            "positive": false
                         }
                     },
                     "probability": 0.5
@@ -439,18 +422,27 @@
                     "states":{
                         "state0": {
                             "token": "block8_step1_state0",
+                            "state": "10",
+                            "post_gate": "h",
+                            "act_on": 0,
+                            "control": "",
+                            "children": ["block9_step0_state0", "block9_step0_state2"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block8_step1_state1",
                             "state": "11",
                             "post_gate": "h",
                             "act_on": 0,
                             "control": "",
-                            "children": ["block9_step0_state0", "block9_step0_state1"],
+                            "children": ["block9_step0_state1", "block9_step0_state3"],
                             "positive": false
                         }
                     },
-                    "probability": 1
+                    "probability": 0.5
                 }
             },
-            "statevector": [[0,0], [0,0], [0,0], [-1,0]]
+            "statevector": [[0,0], [0,0], [0.707,0], [-0.707,0]]
         }
     },
     "block9": {
@@ -460,27 +452,45 @@
                     "states":{
                         "state0": {
                             "token": "block9_step0_state0",
+                            "state": "00",
+                            "post_gate": "h",
+                            "act_on": 1,
+                            "control": "",
+                            "children": ["block9_step1_state0"],
+                            "positive": true
+                        },
+                        "state1": {
+                            "token": "block9_step0_state1",
                             "state": "01",
-                            "post_gate": "x",
+                            "post_gate": "h",
                             "act_on": 1,
                             "control": "",
                             "children": ["block9_step1_state0"],
                             "positive": false
                         },
-                        "state1": {
-                            "token": "block9_step0_state1",
+                        "state2": {
+                            "token": "block9_step0_state2",
+                            "state": "10",
+                            "post_gate": "h",
+                            "act_on": 1,
+                            "control": "",
+                            "children": ["block9_step1_state1"],
+                            "positive": false
+                        },
+                        "state3": {
+                            "token": "block9_step0_state3",
                             "state": "11",
-                            "post_gate": "x",
+                            "post_gate": "h",
                             "act_on": 1,
                             "control": "",
                             "children": ["block9_step1_state1"],
                             "positive": true
                         }
                     },
-                    "probability": 0.5
+                    "probability": 0.25
                 }
             },
-            "statevector": [[0,0], [-0.717,0], [0,0], [0.717,0]]
+            "statevector": [[0.5,0], [-0.5,0], [-0.5,0], [0.5,0]]
         },
         "step1": {
             "hubs": {
@@ -488,27 +498,27 @@
                     "states":{
                         "state0": {
                             "token": "block9_step1_state0",
-                            "state": "00",
+                            "state": "01",
                             "post_gate": "x",
                             "act_on": 0,
                             "control": "",
                             "children": ["block10_step0_state1"],
-                            "positive": false
+                            "positive": true
                         },
                         "state1": {
                             "token": "block9_step1_state1",
-                            "state": "10",
+                            "state": "11",
                             "post_gate": "x",
                             "act_on": 0,
                             "control": "",
                             "children": ["block10_step0_state0"],
-                            "positive": true
+                            "positive": false
                         }
                     },
                     "probability": 0.5
                 }
             },
-            "statevector": [[-0.707,0], [0,0], [0.707,0], [0,0]]
+            "statevector": [[0,0], [0.707,0], [0,0], [-0.707,0]]
         }
     },
     "block10": {
@@ -518,21 +528,21 @@
                     "states":{
                         "state0": {
                             "token": "block10_step0_state0",
-                            "state": "00",
-                            "post_gate": "h",
-                            "act_on": 0,
-                            "control": "",
-                            "children": ["block11_step0_state0"],
-                            "positive": true
-                        },
-                        "state1": {
-                            "token": "block10_step0_state1",
-                            "state": "10",
+                            "state": "01",
                             "post_gate": "h",
                             "act_on": 0,
                             "control": "",
                             "children": ["block11_step0_state0"],
                             "positive": false
+                        },
+                        "state1": {
+                            "token": "block10_step0_state1",
+                            "state": "11",
+                            "post_gate": "h",
+                            "act_on": 0,
+                            "control": "",
+                            "children": ["block11_step0_state0"],
+                            "positive": true
                         }
                     },
                     "probability": 0.5
@@ -550,7 +560,7 @@
                             "token": "block11_step0_state0",
                             "state": "11",
                             "post_gate": "",
-                            "act_on": 1,
+                            "act_on": "",
                             "control": "",
                             "children": [],
                             "positive": false
