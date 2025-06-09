@@ -1,0 +1,86 @@
+[
+  {
+    "block_num": 0,
+    "block_name": "block0",
+    "operation": [
+      {
+        "gate": "x",
+        "qubit": 0
+      },
+      {
+        "gate": "x",
+        "qubit": 2
+      }
+    ]
+  },
+  {
+    "block_num": 1,
+    "block_name": "block1",
+    "operation": [
+      {
+        "gate": "h",
+        "qubit": 0
+      }
+    ]
+  },
+  {
+    "block_num": 2,
+    "block_name": "block2",
+    "operation": [
+      {
+        "gate": "cp",
+        "qubit": "1-0"
+      }
+    ]
+  },
+  {
+    "block_num": 3,
+    "block_name": "block3",
+    "operation": [
+      {
+        "gate": "cp",
+        "qubit": "2-0"
+      }
+    ]
+  },
+  {
+    "block_num": 4,
+    "block_name": "block4",
+    "operation": [
+      {
+        "gate": "h",
+        "qubit": 1
+      }
+    ]
+  },
+  {
+    "block_num": 5,
+    "block_name": "block5",
+    "operation": [
+      {
+        "gate": "cp",
+        "qubit": "2-0"
+      }
+    ]
+  },
+  {
+    "block_num": 6,
+    "block_name": "block6",
+    "operation": [
+      {
+        "gate": "h",
+        "qubit": 2
+      }
+    ]
+  },
+  {
+    "block_num": 7,
+    "block_name": "block7",
+    "operation": [
+      {
+        "gate": "s",
+        "qubit": "0-2"
+      }
+    ]
+  }
+]
